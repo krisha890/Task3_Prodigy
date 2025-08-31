@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Modern Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <div class="game-header">
+                <h1><i class="fas fa-gamepad"></i> Tic Tac Toe</h1>
+                <p>Classic game with modern design</p>
+            </div>
+            
+            <div class="game-info">
+                <div class="game-mode-selector">
+                    <button class="mode-btn active" id="pvp-mode">
+                        <i class="fas fa-users"></i> Krisha vs Prachi
+                    </button>
+                    <button class="mode-btn" id="ai-mode">
+                        <i class="fas fa-robot"></i> Player vs AI
+                    </button>
+                </div>
+                
+                <div class="player-info">
+                    <div class="player active" id="player-x">
+                        <div class="player-icon">X</div>
+                        <div class="player-name">Krisha</div>
+                        <div class="player-score" id="score-x">0</div>
+                    </div>
+                    <div class="vs-indicator">VS</div>
+                    <div class="player" id="player-o">
+                        <div class="player-icon">O</div>
+                        <div class="player-name">Prachi</div>
+                        <div class="player-score" id="score-o">0</div>
+                    </div>
+                </div>
+                
+                <div class="current-player">
+                    <span id="current-player-text">Krisha  Turn</span>
+                </div>
+            </div>
+            
+            <div class="game-board">
+                <div class="board-grid">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+            </div>
+            
+            <div class="game-controls">
+                <button class="btn btn-reset" id="resetBtn">
+                    <i class="fas fa-redo"></i> Reset Game
+                </button>
+                <button class="btn btn-new-game" id="newGameBtn">
+                    <i class="fas fa-plus"></i> New Game
+                </button>
+            </div>
+            
+            <div class="game-status" id="gameStatus">
+                <div class="status-message">Click any cell to start playing!</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
